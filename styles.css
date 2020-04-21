@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "museo";
+    src: url(MuseoSansRounded-100.woff2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c4c4c7;
+    background-image: url(photo/bg.png);
+    background-size: cover;
+}
+
+.container__body {
+    margin: 110px auto;
+    height: 391px;
+    width: 688px;
+    background-color: #111a28;
+    font-family: museo;
+
+    position: relative;
+}
+
+.container__logo {
+    height: 35px;
+    width: 65px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.container__info {
+    color: #fff;
+    width: 180px;
+    float: right;
+    margin-top: 75px;
+    margin-right: 65px;
+}
+
+.container__text1 {
+    opacity: 0.7;
+    width: 200px;
+}
+
+.container__text2 {
+    opacity: 0.5;
+    width: 265px;
+}
+
+.container__rating {
+    height: 12px;
+    width: 65px;
+    margin-right: 50px;
+}
+
+
+
+.menu::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.menu {
+    display: inline-block;
+    padding: 0;
+    border: 2px solid #fff;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    font-family: museo;
+}
+.menu__text {
+    margin: 0 5px;
+}
+
+.menu > li {
+    float: left;
+    position: relative;
+
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0;
+    list-style: none;
+}
+
+.menu__link::after {
+    content: "\21D3";
+    color: inherit;
+    margin-left: 10px;
+}
+
+.menu__list {
+    background-color: #DEB887;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 100px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+}
+
+.menu__list li {
+    color: #fff;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 13px;
+    border-bottom: 1px solid #000;
+    list-style: none;
+}
+
+.menu > li:hover .menu__list {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+
+
+
+.button {
+    width: 185px;
+    height: 40px;
+    background-color: #202835;
+    color: #fff;
+    border: 1px solid #7e838b;
+}
+
+.button__inner {
+    opacity: 0.5;
+}
+
+
+.product {
+    margin: 60px 30px;
+}
+
+.style__list {
+    list-style: none;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+}
+
+.color:hover, .red:hover, .wh:hover, .bl:hover {
+    border: 2px solid #7e838b;
+}
+
+.style {
+    margin-left: 170px;
+}
+
+.wh {
+    background-color: #fff;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+}
+
+.color {
+    background-color: #1f273f;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+}
+
+.red {
+    background-color: #ed3333;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+}
+
+.bl {
+    background-color: #29e3ea;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+}
