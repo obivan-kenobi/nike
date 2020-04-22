@@ -66,10 +66,9 @@ body {
 .menu {
     display: inline-block;
     padding: 0;
-    border: 2px solid #fff;
+    border: 1px solid #7e838b;
     width: 70px;
     height: 30px;
-    text-align: center;
     font-family: museo;
 }
 .menu__text {
@@ -83,7 +82,7 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    color: #fff;
+    color: #7e838b;
     padding: 0;
     list-style: none;
 }
@@ -108,7 +107,7 @@ body {
 }
 
 .menu__list li {
-    color: #fff;
+    color: #7e838b;
     text-align: left;
     padding: 12px 15px;
     font-size: 13px;
