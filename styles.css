@@ -184,3 +184,39 @@ body {
     width: 15px;
     margin: 0 5px;
 }
+
+
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    margin-right: 30px;
+}
+
+.rating input {
+    position: absolute;
+    -webkit-appearance: none;
+}
+
+.rating-item {
+    height: 25px;
+    width: 25px;
+    background-image: url(stars.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0s;
+}
+
+
+
+.rating>input:checked~label {
+    background-image: url(stars2.png);
+}
+
+.rating-item:hover {
+    background-image: url(stars2.png);
+}
+
+.rating-item:hover~label {
+    background-image: url(stars2.png);
+}
+
